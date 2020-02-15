@@ -26,20 +26,20 @@ def collatz(n)
 end
 
 def longest_collatz
-  i = 10^6 - 1
-
+  i = 10**6 - 1
   result = [1]
   stored_i = 1
 
-  (1..i).each { |i|
-    if collatz(i).length > result.length
-      result = collatz(i)
-      stored_i = i
-    end
-    }
+  while i > 1 do
+      collatz_array = collatz(i)
+      if collatz_array.length > result.length
+        result = collatz_array
+        stored_i = i
+      end
+    i - 2
+  end
+
   stored_i
 
 end
 
-i = 10^6 - 1
-puts i
