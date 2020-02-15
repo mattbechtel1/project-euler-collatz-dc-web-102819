@@ -27,7 +27,7 @@ end
 
 def longest_collatz
   i = 10^6 - 1
-  puts i
+
   result = [1]
   stored_i = 1
 
@@ -41,4 +41,5 @@ def longest_collatz
 
 end
 
-puts longest_collatz
+i = 10^6 - 1
+puts i
