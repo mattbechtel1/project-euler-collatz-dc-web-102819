@@ -30,7 +30,7 @@ def longest_collatz
   result = [1]
   stored_i = 1
 
-  while i > 0 do
+  while i > 1 do
       collatz_array = collatz(i)
       if collatz_array.length > result.length
         result = collatz_array
