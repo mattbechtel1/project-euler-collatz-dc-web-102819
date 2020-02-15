@@ -26,7 +26,7 @@ def collatz(n)
 end
 
 def longest_collatz
-  i = 10^3 - 1
+  i = 10
   result = [1]
   stored_i = 1
 
