@@ -36,7 +36,7 @@ def longest_collatz
         result = collatz_array
         stored_i = i
       end
-    i - 2
+    i -= 2
   end
 
   stored_i
