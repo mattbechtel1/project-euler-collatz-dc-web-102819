@@ -39,4 +39,4 @@ def longest_collatz
 
 end
 
-puts collatz(10).length > [1].length
+puts longest_collatz
