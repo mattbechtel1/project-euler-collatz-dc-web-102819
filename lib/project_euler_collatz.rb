@@ -29,16 +29,16 @@ def longest_collatz
   i = 10^6 - 1
   result = [1]
   stored_i = 1
-  stored_largest = Float::INFINITY
 
-  while i < 0
-    collatz_array = collatz_array(i)
-    if collatz_array.length > result.length
-      result = collatz_array
-      stored_i = i
-      stored_largest = collatz_array[1]
-    end
+  while i > 0
+      collatz_array = collatz(i)
+      if collatz_array.length > result.length
+        result = collatz_array
+        stored_i = i
+      end
     i - 2
   end
+
+  stored_i
 
 end
