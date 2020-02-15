@@ -43,4 +43,4 @@ def longest_collatz
 
 end
 
-puts longest_collatz
+puts collatz(10)
