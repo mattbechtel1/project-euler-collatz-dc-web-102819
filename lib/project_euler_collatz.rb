@@ -30,7 +30,7 @@ def longest_collatz
   result = [1]
   stored_i = 1
 
-  (1..i).each { |i| 
+  (1..i).each { |i|
     if collatz(i).length > result.length
       result = collatz(i)
       stored_i = i
@@ -40,4 +40,3 @@ def longest_collatz
 end
 
 puts collatz(10).length > [1].length
-
