@@ -17,7 +17,7 @@ end
 
 def collatz(n)
   result = [n]
-  while n !== 1 do
+  while n != 1 do
     n = next_value(n)
     result << n
   end
