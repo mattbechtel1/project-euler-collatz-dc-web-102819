@@ -42,5 +42,3 @@ def longest_collatz
   stored_i
 
 end
-
-puts longest_collatz
