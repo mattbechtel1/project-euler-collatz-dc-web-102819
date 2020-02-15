@@ -34,6 +34,7 @@ def longest_collatz
     if collatz(i).length > result.length
       result = collatz(i)
       stored_i = i
+    end
     }
   stored_i
 
